@@ -2,11 +2,7 @@ package com.chris_lai.pkm_tcg_pocket_helper.card;
 
 import com.chris_lai.pkm_tcg_pocket_helper.types.cardPack.CardPackEnum;
 
-interface CardProps {
-    public void log();
-}
-
-public class Card implements CardProps {
+public class Card {
     String id;
     String name;
     CardPackEnum cardPack;
