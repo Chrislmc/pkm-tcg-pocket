@@ -1,15 +1,17 @@
 package com.chris_lai.pkm_tcg_pocket_helper.card;
 
+import com.chris_lai.pkm_tcg_pocket_helper.types.cardPack.CardPackEnum;
+
 interface CardProps {
     public void log();
 }
 
 public class Card implements CardProps {
-    String id = "";
+    String id;
     String name;
-    String cardPack = "";
+    CardPackEnum cardPack;
     
-    public Card(String cardId, String cardName, String cardPackName) {
+    public Card(String cardId, String cardName, CardPackEnum cardPackName) {
         id = cardId;
         name = cardName;
         cardPack = cardPackName;
