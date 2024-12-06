@@ -1,4 +1,4 @@
-package com.chris-lai.pkm-tcg-pocket;
+package com.chris_lai.pkm_tcg_pocket;
 
 import static org.junit.Assert.assertTrue;
 
