@@ -1,4 +1,17 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "cSpell.words": [
+        "Beedrill",
+        "Bulbasaur",
+        "Butterfree",
+        "Caterpie",
+        "Ivysaur",
+        "Kakuna",
+        "Metapod",
+        "MEWTWO",
+        "PIKACHU",
+        "Venusaur",
+        "Weedle"
+    ]
 }
