@@ -1,8 +1,5 @@
 package com.chris_lai.pkm_tcg_pocket_helper.card;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.chris_lai.pkm_tcg_pocket_helper.types.cardPack.CardPackEnum;
 import com.chris_lai.pkm_tcg_pocket_helper.types.rarity.RarityEnum;
 
@@ -11,28 +8,6 @@ public class Card {
     String name;
     CardPackEnum cardPack;
     RarityEnum rarity;
-    HashMap<RarityEnum, String> rarityDesc = new HashMap<RarityEnum, String>(Map.ofEntries(
-            Map.entry(
-                    RarityEnum.NORMAL_ONE,
-                    "♢"),
-            Map.entry(
-                    RarityEnum.NORMAL_TWO,
-                    "♢♢"),
-            Map.entry(
-                    RarityEnum.NORMAL_THREE,
-                    "♢♢♢"),
-            Map.entry(
-                    RarityEnum.NORMAL_FOUR,
-                    "♢♢♢♢"),
-            Map.entry(
-                    RarityEnum.STAR_ONE,
-                    "☆"),
-            Map.entry(
-                    RarityEnum.STAR_TWO,
-                    "☆☆"),
-            Map.entry(
-                    RarityEnum.CROWN,
-                    "♛")));
 
     public Card(String cardId, String cardName, CardPackEnum cardPackName, RarityEnum cardRarity) {
         id = cardId;
@@ -42,8 +17,7 @@ public class Card {
     }
 
     public String parseRarity() {
-        return rarityDesc.get(
-                rarity);
+        return rarity.getRarityDesc();
     }
 
     public void log() {
